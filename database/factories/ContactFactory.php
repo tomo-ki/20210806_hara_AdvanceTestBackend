@@ -29,7 +29,7 @@ class ContactFactory extends Factory
             'address' => $this->faker->prefecture . ($this->faker->city|| $this->faker->ward) . $this->faker->streetAddress,
             'building_name' => $this->faker->secondaryAddress(),
             'opinion' => $this->faker->realText(100),
-            'created_at' => $this->faker->date($format = 'Y-m-d', $max = 'now',$min = '2021-01-01'),
+            'created_at' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
         ];
     }
 }
